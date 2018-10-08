@@ -15,4 +15,3 @@ foreach ($data as $key => $val)
     var_dump($data);
 }
 var_dump($data);
-
