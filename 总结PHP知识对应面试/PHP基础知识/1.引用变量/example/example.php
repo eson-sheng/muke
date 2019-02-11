@@ -1,7 +1,7 @@
 <?php
 /**
  * 写出如下程序的输出结果 
- * foreach ($dat as $key => $val) 
+ * foreach ($data as $key => $val)
  * {
  *      $val = &$data[$key];   
  * }
