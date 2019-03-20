@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>练习vuejs的代码片段</title>
+</head>
+<body>
+    <div id="appx">
+        <h1>{{title}}</h1>
+        <input required type="text" name="username" id="username" placeholder="请输入账号" value="" 
+        v-model="username" >
+        <p>{{username}}</p>
+        <a v-bind:href="url">Eson - 小博客</a>
+        <ul>
+            <li v-for="item in items">
+                {{item.uname}}
+            </li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="./src/Vue.js"></script>
+<script type="text/javascript">
+
+    var ret = [{uname:"eson"},{uname:"lisa"},{uname:"collin"}];
+
+    var subClass = Vue.extend({
+        data(){
+            return {
+                title: "hellow!",
+            }
+        }
+    });
+
+    var vm = new subClass({
+        el: '#appx',
+        data: {
+            username: "",
+            url: "http://shengxuecheng.cn/",
+            items: ret,
+        }
+    });
+
+    vm.$el.style.color = "pink";
+
+</script>
+</html>
