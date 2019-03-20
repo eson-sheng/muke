@@ -1,0 +1,4 @@
+# 自动化构建工具
+/node_modules
+package.json
+package-lock.json

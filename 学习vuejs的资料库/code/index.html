@@ -8,6 +8,9 @@
         <h1>{{title}}</h1>
         <input required type="text" name="username" id="username" placeholder="请输入账号" value="" 
         v-model="username" >
+        <p style="color:red;">自动化构建工具：
+            <per>$ npm install webpack -g</per> (全局安装)
+        </p>
         <p>{{username}}</p>
         <a v-bind:href="url">Eson - 小博客</a>
         <ul>
